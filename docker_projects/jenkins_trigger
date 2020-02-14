@@ -1,0 +1,8 @@
+# must have the URL and port number
+
+#Ex:1 with authentication in the web browser
+http://10.0.2.15:8080/job/First%20Job/build?token=IhGD9QvtNgvQdtMk3yFP
+
+
+#Ex:2 with authentication from the cli
+http://admin:11e03f13897ca3d9c50cf67e3e1efb40a2@10.0.2.15:8080/job/First%20Job/build?token=IhGD9QvtNgvQdtMk3yFP
