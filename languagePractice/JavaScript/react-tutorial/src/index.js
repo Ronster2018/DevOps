@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+// Importing CSS
+import './index.css'
 
 function BookList(){
     return(
-        <section>
+        <section className = 'booklist'>
+            <Book/>
+            <Book/>
             <Book/>
         </section>
     );
@@ -11,7 +15,7 @@ function BookList(){
 
 const Book = () =>{
     return (
-        <article>
+        <article className = 'book'>
             <Image/>
             <Title></Title>
             <Author/>
@@ -23,12 +27,12 @@ const Image = () => <img src="https://images-na.ssl-images-amazon.com/images/I/6
 
 const Author = () => {
     return (
-        <h1>Kathryne Taylor </h1>
+        <h3>Kathryne Taylor </h3>
     );
 }
 const Title = () => {
     return(
-        <h3>Love Real Food: More Than 100 Feel-Good Veg… </h3>
+        <h1>Love Real Food: More Than 100 Feel-Good Veg… </h1>
     );
 }
 
