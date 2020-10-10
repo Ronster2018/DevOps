@@ -6,6 +6,16 @@ import React from 'react'
 // Used for the render method which renders the component in the index.html
 import ReactDOM from 'react-dom'
 
+//Nested components
+const Person = () => <h2>How are you</h2>
+
+const Message = () => {
+  return (
+  <div>
+    <h1>Hello there</h1>
+  </div>
+    );
+}
 
 
 // We also always need a function. 
@@ -16,7 +26,10 @@ import ReactDOM from 'react-dom'
 function Greeting() {
   return (
   <div className='greeting'>
-    <h1>Hello there</h1>
+
+  {/* If we are going to include a component, we can just call the function by its Name */}
+    <Message/>
+    <Person/>
   </div>
   );
 }
